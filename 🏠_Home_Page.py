@@ -52,7 +52,7 @@ st.markdown("###### Yeah… Yeah we know… it's time to seriously consider movi
 st.markdown("###### And you’re probably thinking “Wouldn’t it be nice if someone just picked something for me? Or at least help me decide? I need an expert…” ")
 st.markdown("###### Well look no more! We did the search for you!")
 st.markdown("###### See Riyadh, just like any city, is split into multiple regions:")
-st.image("./assets/distribution of region.png", caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+st.image("./assets/distribution of region.png", caption=None, width=500, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 st.markdown("###### We thought perhaps renting apartments fit you best.")
 st.markdown("###### And although they are found in all regions, prices vary.")
