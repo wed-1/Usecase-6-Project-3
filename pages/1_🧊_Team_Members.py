@@ -10,5 +10,4 @@ st.markdown("""
     - [Alaa .](https://github.com/alaaAlahmadi2001)
     - [Raghad .](https://github.com/RaghadAlmalki)
     - [Abdulaziz .](https://github.com/abdulaziz12121)
-   
 """)

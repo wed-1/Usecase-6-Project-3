@@ -4,37 +4,54 @@ st.set_page_config(page_title="Data Overview", page_icon="📊", layout="wide")
 
 
 st.markdown("# Dataset Overview")
+st.markdown("These are data for the real estate transactions that took place in the Kingdom of Saudi Arabia, it was scraped from [Aqar](https://sa.aqar.fm)")
 
-# TODO: List of EDA steps that applied on data with description
+columns = "user_id,id,title,price,content,imgs,refresh,beds,livings,wc,area,street_width,age,last_update,ketchen,ac,furnished,location,path,district,width,length,advertiser_type,create_time,review,profileImg,UserName,iam_verified,onMarket,IsRent"
+
+descriptions = {
+    "user_id": "The user id",
+    "id": "The post id",
+    "title": "Title of the rental apartments",
+    "price": "Price of the rental",
+    "content": "Description of the rental",
+    "imgs": "Images related to the rental",
+    "refresh": "Last refresh timestamp",
+    "beds": "Number of beds",
+    "livings": "Number of living rooms",
+    "wc": "Number of water closets",
+    "area": "Area in square meters",
+    "street_width": "Width of the street",
+    "age": "Age of the property",
+    "last_update": "Last update timestamp",
+    "ketchen": "Presence of a kitchen",
+    "ac": "Presence of air conditioning",
+    "furnished": "Furnished status",
+    "location": "Location of the property",
+    "path": "Path to the property",
+    "district": "District of the property",
+    "width": "Width of the property",
+    "length": "Length of the property",
+    "advertiser_type": "Type of advertiser",
+    "create_time": "Creation time of the listing",
+    "review": "User reviews",
+    "profileImg": "Profile image of the advertiser",
+    "UserName": "Name of the user",
+    "iam_verified": "Verification status of the user",
+    "onMarket": "Whether the property is on the market",
+    "IsRent": "Whether the property is for rent"
+}
+
+column_list = columns.split(',')
+
 st.markdown("## Introducion")
-st.markdown("The dataset contains the following columns:")
 st.markdown("### Data")
 st.markdown("The dataset contains the following columns:")
-st.markdown("1. `front`.")
-st.markdown("2. `rooms`.")
-st.markdown("3. `lounges.`")
-st.markdown("4. `bathrooms.`")
-st.markdown("5. `streetWidth.`")
-st.markdown("6. `stairs.`")
-st.markdown("7. `propertyAge.`")
-st.markdown("8. `driverRoom.`")
-st.markdown("9. `tent.`")
-st.markdown("10. `patio.`")
-st.markdown("11. `kitchen.`")
-st.markdown("12. `outdoorRoom.`")
-st.markdown("13. `garage.`")
-st.markdown("14. `duplex.`")
-st.markdown("15. `space.`")
-st.markdown("16. `apartments.`")
-st.markdown("17. `maidRoom.`")
-st.markdown("18. `elevator.`")
-st.markdown("19. `furnihsed.`")
-st.markdown("20. `pool.`")
-st.markdown("21. `basement.`")
-st.markdown("22. `neighbourhood.`")
-st.markdown("23. `location.`")
-st.markdown("24. `price.`")
+for i, column in enumerate(column_list, start=1):
+    description = descriptions.get(column, ".")
+    st.markdown(f"`{i}. {column}`: {description}")
+
+
 
 st.markdown("### Data Source")
 st.markdown("The data is collected from the following sources:")
-st.markdown("1. [Kaggle - Scrapped Data from Aqar](https://www.kaggle.com/datasets/salmanshir/riyadhhousingdata)")
+st.markdown("1. [Scrapped from Aqar](https://sa.aqar.fm)")
