@@ -52,13 +52,13 @@ st.markdown("###### Yeah… Yeah we know… it's time to seriously consider movi
 st.markdown("###### And you’re probably thinking “Wouldn’t it be nice if someone just picked something for me? Or at least help me decide? I need an expert…” ")
 st.markdown("###### Well look no more! We did the search for you!")
 st.markdown("###### See Riyadh, just like any city, is split into multiple regions:")
-st.image("./assets/distribution of region.png", caption=None, width=700, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+st.image("./assets/distribution of region.png", caption=None, width=600, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 st.markdown("###### We thought perhaps renting apartments fit you best.")
 st.markdown("###### And although they are found in all regions, prices vary.")
 st.markdown("###### What affects the price is how far the place is from the center, and whether or not it's in a 'hot' new neighborhood.")
 
-st.image("./assets/Price per region.png", caption=None, width=1000, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+st.image("./assets/Price per region.png", caption=None, width=900, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 option = st.selectbox(
    "**Which region do you want to move to?**",
@@ -66,19 +66,19 @@ option = st.selectbox(
 )
 
 if option == "Center":
-    st.image("./assets/Center.png", caption=None, width=1000, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    st.image("./assets/Center.png", caption=None, width=900, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 elif option == "West":
-    st.image("./assets/West.png", caption=None, width=1000, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    st.image("./assets/West.png", caption=None, width=900, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 elif option == "North":
-    st.image("./assets/North.png", caption=None, width=1000, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    st.image("./assets/North.png", caption=None, width=900, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 elif option == "East":
-    st.image("./assets/East.png", caption=None, width=1000, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    st.image("./assets/East.png", caption=None, width=900, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 elif option == "South":
-    st.image("./assets/South.png", caption=None, width=1000, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    st.image("./assets/South.png", caption=None, width=900, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 
 st.markdown("###### Now all you have to do is consider transportation.")
@@ -95,10 +95,10 @@ st.markdown("#### Our Recommendations ")
 
 
 with st.expander("If you don't have a problem to spend more money"):
-    st.image("./assets/Top neighborhood.png", caption=None, width=1000, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    st.image("./assets/Top neighborhood.png", caption=None, width=900, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
         
 with st.expander("If you need to spend wisely"):
-    st.image("./assets/last 10.png", caption=None, width=1000, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    st.image("./assets/last 10.png", caption=None, width=900, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 
 
